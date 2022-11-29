@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { OrderNowComponent } from './order-now/order-now.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -58,7 +59,8 @@ const myRoute:Routes=[
     SouthFoodComponent,
     LoginComponent,
     SignUpComponent,
-    OrderNowComponent
+    OrderNowComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
