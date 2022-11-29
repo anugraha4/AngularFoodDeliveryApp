@@ -11,6 +11,42 @@ import { SouthFoodComponent } from './south-food/south-food.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { OrderNowComponent } from './order-now/order-now.component';
+import { RouterModule, Routes } from '@angular/router';
+const myRoute:Routes=[
+  {
+    path:"",
+    component:FoodComponent
+  },
+  {
+    path:"category",
+    component:CategoriesComponent
+  },
+  {
+    path:"pizza",
+    component:PizzaComponent
+  },
+  {
+    path:"cake",
+    component:CakeComponent
+
+  },
+  {
+    path:"south",
+    component:SouthFoodComponent
+  },
+  {
+    path:"login",
+    component:LoginComponent
+  },
+  {
+    path:"signup",
+    component:SignUpComponent
+  },
+  {
+    path:"order",
+    component:OrderNowComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -26,7 +62,8 @@ import { OrderNowComponent } from './order-now/order-now.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
