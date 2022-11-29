@@ -10,6 +10,7 @@ import { CakeComponent } from './cake/cake.component';
 import { SouthFoodComponent } from './south-food/south-food.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { OrderNowComponent } from './order-now/order-now.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     CakeComponent,
     SouthFoodComponent,
     LoginComponent,
-    SignUpComponent
+    SignUpComponent,
+    OrderNowComponent
   ],
   imports: [
     BrowserModule,
