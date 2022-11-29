@@ -8,6 +8,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { PizzaComponent } from './pizza/pizza.component';
 import { CakeComponent } from './cake/cake.component';
 import { SouthFoodComponent } from './south-food/south-food.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SouthFoodComponent } from './south-food/south-food.component';
     CategoriesComponent,
     PizzaComponent,
     CakeComponent,
-    SouthFoodComponent
+    SouthFoodComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
