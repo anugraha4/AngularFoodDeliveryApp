@@ -5,18 +5,18 @@
             <div class="row g-3 gt-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control">
+                    <input name="cname" [(ngModel)]="cname"type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Phone Number</label>
-                    <input type="text" class="form-control">
+                    <input name="phnumber" [(ngModel)]="phnumber"type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Delivery Address</label>
-                    <input type="text" class="form-control">
+                    <input name="deladdress" [(ngModel)]="deladdress"type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success" routerLink="">Buy Now</button>
+                    <button (click)="order()"class="btn btn-success" routerLink="">Buy Now</button>
                 </div>
             </div>
         </div>

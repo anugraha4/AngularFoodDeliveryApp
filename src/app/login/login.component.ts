@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+username=""
+password=""
 
+login=()=>
+{
+  let lgin:any={"username":this.username,"password":this.password}
+  console.log(lgin)
+}
 }

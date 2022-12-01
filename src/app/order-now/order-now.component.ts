@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./order-now.component.css']
 })
 export class OrderNowComponent {
+cname=""
+phnumber=""
+deladdress=""
 
+order=()=>
+{
+  let ord:any={"cname":this.cname,"phnumber":this.phnumber,"deladdress":this.deladdress}
+  console.log(ord)
+}
 }
